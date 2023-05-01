@@ -1,6 +1,3 @@
-# Tercera-pre-entrega-MartinLanfranchi
-Presento mi tercera y ultima pre entrega del curso de Python en Coderhouse con Django.
-
 Orden de prueba:
 1) Agregar Todos los datos de los models
 2) Despues realizar la busqueda de las dos opciones disponibles si es requerido.

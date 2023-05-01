@@ -1,0 +1,21 @@
+{% extends "App1/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambiaTienda %}
+
+    {% if miFormulario.errors %} 
+    <p style="color: red;">Estan mal los datos, revisar</p>
+    {% endif %}
+
+    <form action="" method="post">{% csrf_token %}
+        
+        <table>
+            {{ miFormulario.as_table }}
+        </table>
+
+        <input type="submit", value="Enviar">
+
+    </form>
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "App1/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambiaServicio %}
+
+     <p> El/Los servicios que coinciden con la busqueda son: {{servicio}}</p>
+     {% if servicios %} 
+     <ul>
+     {% for servicio in servicios %} 
+         <li>Nombre del servicio: {{servicio.nombre}}</li>
+         <li>Fecha entrega: {{servicio.fechaentrega}}</li>
+         <p></p>
+         
+         
+     {% endfor %}
+     </ul>
+     {% endif %}
+
+{% endblock %}

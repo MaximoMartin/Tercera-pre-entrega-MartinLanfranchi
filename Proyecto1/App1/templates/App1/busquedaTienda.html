@@ -1,0 +1,18 @@
+{% extends "App1/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambiaTienda %}
+
+    {% if miFormulario.errors %} 
+    <p style="color: red;">Estan mal los datos, revisar</p>
+    {% endif %}
+    
+    <form action="/App1/buscar/" method="get">
+
+        <input type="number" name="tienda" id="tienda">
+
+        <input type="submit" value="Buscar">
+        
+     </form>   
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "App1/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambiaServicio %}
+    
+    {% if miFormulario.errors %} 
+    <p style="color: red;">Estan mal los datos, revisar</p>
+    {% endif %}
+
+    <form action="" method="post">{% csrf_token %}
+        <table>
+
+            {{ miFormulario.as_table }}
+
+        </table>
+        <p style="color: black;">El formato de la fecha es EJ: 2022-12-30</p>
+        <input type="submit", value="Enviar">
+        
+     </form>   
+{% endblock %}
